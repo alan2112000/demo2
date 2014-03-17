@@ -1,0 +1,13 @@
+<ul>
+	<table style="width:300px "> 
+		<% @events.each do |event| %>
+			<tr> 
+				<td><%= link_to event.name ,event_path(event) %> </td>
+				<td><%= link_to 'edit' ,edit_event_path(event) %></td> 
+				<td><%= button_to 'delete' , event_path(event),:method => :delete %></td> 
+			</tr>
+		<% end %>
+		<%= paginate @events %>
+	</table> 
+</ul>
+<%= link_to 'New event', new_event_path  %>
