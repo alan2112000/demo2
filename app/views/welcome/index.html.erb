@@ -1,2 +1,17 @@
-<p>Hola! It's <%= Time.now %></p> 
 <p><%= link_to 'Hello!', welcome_say_hello_path %></p>
+
+<div class="row"> 
+<% a=[1,2,3,4,5,6]  
+a.each do |b| %> 
+	<div class="col-sm-6 col-md-4">
+		<div class="thumbnail">
+			<img data-src="holder.js/300x200" alt="... ">
+			<div class="caption">
+				<h3>Product Label </h3>
+				<p>this is description this is description this is description</p>
+				<p><a href="#" class="btn btn-primary" role="button">$xxxxx</a> <a href="#" class="btn btn-default" role="button">Read More</a></p>
+			</div>
+		</div>
+</div>   
+
+<%end%> 
