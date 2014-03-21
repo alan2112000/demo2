@@ -1,4 +1,6 @@
 Demo2::Application.routes.draw do
+  get "pages/about"
+  get "pages/contact"
   resources :people,:events
 
 	get "welcome/say_hello" => "welcome#say"
