@@ -1,0 +1,15 @@
+<div class="list-group">
+  <% @products.each do |product| %>
+
+      <% if @product != nil %>
+          <% if product.name == @product.name %>
+              <%= link_to product.name, product_path(product), class: "list-group-item active" %>
+          <% else %>
+              <%= link_to product.name, product_path(product), class: "list-group-item" %>
+          <% end %>
+
+      <% else %>
+          <%= link_to product.name, product_path(product), class: "list-group-item" %>
+      <% end %>
+  <% end %>
+</div>
