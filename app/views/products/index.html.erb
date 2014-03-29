@@ -1,26 +1,22 @@
-<div class="row">
-  <% @products.each do |product| %>
-      <div class="col-xs-6 col-sm-4 col-md-3">
-        <div class="thumbnail">
-          <%= image_tag(product.pic, class: "img-circle", height: "174", width: "180") %>
-          <div class="caption">
-            <h3><%= product.name %>  </h3>
+<div class="container">
+  <div class="col-md-offset-4">
+    <!--navbar-->
+    <ul class="nav nav-pills">
+      <li class="active"><%= link_to "Home", products_path, data: {toogle: "tab"} %></li>
+      <% $categories=Category.all %>
+      <% $categories.each do |c| %>
+          <li><%= link_to c.name, category_path(c), data: {toogle: "tab"} %></li>
+      <% end %>
+    </ul>
+  </div>
 
-            <p><%= product.description %></p>
+  <!--shor all product -->
+  <div class="row row-offcanvas row-offcanvas-right">
+    <%= render :partial => "common/productList" %>
+    <%= paginate @products %>
+  </div>
+</div>
 
-            <p><a href="#" class="btn btn-primary" role="button">$xxxxx</a>
-              <a href="#" class="btn btn-default" role="button">Read More</a></p>
-          </div>
-        </div>
-        <p><%= link_to product.name, product_path(product) %></p>
 
-        <p><%= link_to 'edit', edit_product_path(product) %></p>
-
-        <p><%= button_to 'delete', product_path(product), :method => :delete %>
-
-        <p>
-
-      </div>
-
-  <% end %>
-  <%= link_to "New event", new_product_path %>
+<!--TODO : page list -->
+<%= link_to "New event", new_product_path %>
