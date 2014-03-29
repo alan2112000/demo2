@@ -1,0 +1,4 @@
+<%= form_for @p, :url => products_path do |f| %> 
+	<% render :partia => 'formProduct' , :locals => {:f => f} %> 
+	<% f.submit "create" %> 
+<%end%>

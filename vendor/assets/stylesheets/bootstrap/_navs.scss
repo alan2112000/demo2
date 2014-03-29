@@ -131,6 +131,13 @@
       margin-left: 2px;
     }
 
+    > p {
+      border-radius: $nav-pills-border-radius;
+    } +
+    li {
+        margin-left: 2px;
+      }
+
     // Active state
     &.active > a {
       &,

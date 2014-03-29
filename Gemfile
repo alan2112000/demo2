@@ -38,6 +38,10 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # let list to mutiple pages 
 gem "kaminari"
 
+# for fake data 
+
+gem 'faker'
+
 # bootstrap css  
 gem "bootstrap-sass" 
 # Use unicorn as the app server

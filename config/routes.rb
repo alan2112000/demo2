@@ -1,4 +1,10 @@
 Demo2::Application.routes.draw do
+
+  root :to => "products#index"
+  resources :categories
+  resources :tests
+  resources :products
+
   get "pages/about"
   get "pages/contact"
   resources :people,:events
@@ -7,7 +13,7 @@ Demo2::Application.routes.draw do
 	get "welcome/" => "welcome#index"
 	
 	#set homepage 
-	root :to => "welcome#index" 
+	#root :to => "welcome#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

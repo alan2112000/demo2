@@ -2,8 +2,8 @@
 	<table style="width:300px "> 
 		<% @events.each do |event| %>
 			<tr> 
-				<td><%= link_to event.name ,event_path(event) %> </td>
-				<td><%= link_to 'edit' ,edit_event_path(event) %></td> 
+				<td><%= link_to event. ,event_path(event) %> </td>
+				<td><%= button_to 'edit' ,edit_event_path(event) %></td>
 				<td><%= button_to 'delete' , event_path(event),:method => :delete %></td> 
 			</tr>
 		<% end %>
