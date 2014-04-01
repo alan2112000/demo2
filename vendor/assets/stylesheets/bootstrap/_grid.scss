@@ -82,6 +82,8 @@
 @media (min-width: $screen-lg-min) {
   .container {
     width: $container-lg;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @include make-grid-columns-float(lg);

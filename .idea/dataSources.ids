@@ -6,4 +6,22 @@
   <data-source source="LOCAL" name="Rails demo2: test" uuid="b862a941-fcb7-4e4e-813e-ef2029a948cd">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails groupme: development" uuid="93f90477-95d0-4d3d-bf68-3569ff6ed8cb">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails groupme: test" uuid="b13e9af8-4daa-4386-bc29-d1310f8fa1a0">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails testBoot: development" uuid="31e6543a-208f-4562-b924-818cef845ad8">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails testBoot: test" uuid="ae9f6fbb-6176-4c57-af7d-13fc348d85fa">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails NTHU_BUDGET: development" uuid="26949143-1542-4ed6-b378-62b621b16d4d">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails NTHU_BUDGET: test" uuid="a7212b92-9e57-4449-b18f-d3a4c55f2cfa">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>

@@ -6,12 +6,16 @@
       <% $categories=Category.all %>
       <% $categories.each do |c| %>
           <li><%= link_to c.name, category_path(c), data: {toogle: "tab"} %></li>
+          <%= link_to :edit , edit_category_path(c) %>
+          <%= button_to 'delete', category_path(c), :method => :delete %>
       <% end %>
+      <% link_to :new , new_category_path %>
     </ul>
   </div>
 
   <!--shor all product -->
   <div class="row row-offcanvas row-offcanvas-right">
+
     <%= render :partial => "common/productList" %>
     <%= paginate @products %>
   </div>

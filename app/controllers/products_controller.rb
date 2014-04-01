@@ -17,6 +17,7 @@ class ProductsController < ApplicationController
   def show
       @products = Product.where("category='#{@product.category}'")
 
+
   end
 
   def delete
@@ -49,7 +50,7 @@ class ProductsController < ApplicationController
 
 
   def product_param
-    params.require(:product).permit(:name, :description, :category ,:pic ,:price)
+    params.require(:product).permit(:name, :description, :category ,:pic ,:price , :pic2 , :pic3 , :long_des , :video_url)
   end
 
 

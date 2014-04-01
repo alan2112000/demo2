@@ -44,8 +44,19 @@ gem 'faker'
 
 # bootstrap css  
 gem "bootstrap-sass" 
+
+# BDD test  
+group :test ,:development do 
+	gem "rspec","~>2.0" 
+	gem "rspec-rails","~>2.0" 
+end
+
+gem 'pdftohtmlr'
+gem 'nokogiri'
+gem 'pdf-reader-html', '~> 0.1.0'
+gem 'video_info'
 # Use unicorn as the app server
-# gem 'unicorn'
+# gem 'unicorn'1
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development

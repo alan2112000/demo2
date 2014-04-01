@@ -5,13 +5,12 @@
       <div class="thumbnail">
         <%= image_tag(product.pic, class: "img-responsive", height: '140', width: '140') %>
         <div class="caption">
-          <h2><%= product.name %>  </h3>
-            <p><%= product.description %></p>
+          <h3><%= product.name %>  </h3>
+            <p align ="center"><%= product.description %></p>
             <button type="button" class="btn btn-info"><%= product.price %></button>
-            <%= link_to "Read More", product_path(product), class: "btn btn-dafult" %>
+            <%= link_to "Read More...", product_path(product), class: "btn btn-dafult" %>
         </div>
       </div>
-      <p><%= link_to product.name, product_path(product) %></p>
 
       <p><%= link_to 'edit', edit_product_path(product) %></p>
 
